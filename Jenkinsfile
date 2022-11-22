@@ -2,7 +2,7 @@ pipeline{
         agent any;
         stages{
                 stage('SCM Checkout'){
-                        step{
+                        steps{
                                 git branch: 'main', credentialsId: 'eli-cred', url: 'https://github.com/Elizabeth-attah/myclassrepo.git'
                         }
 
